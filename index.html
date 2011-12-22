@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>leehsueh</title>
+<style type="text/css">
+<!--
+body {
+    font: 100% Arial, Helvetica, sans-serif;
+    background: #fff;
+    margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+    padding: 0;
+    text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+    color: #222;
+}
+.oneColFixCtr #container {
+    width: 600px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+    height: 410px;
+    background: #fff;
+    margin: 120px auto; /* the auto margins (in conjunction with a width) center the page */
+    border: 0;
+    border-right: 1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    text-align: left; /* this overrides the text-align: center on the body element. */
+    position: relative;
+}
+
+#header { 
+    width: 482px;
+    height:72px;
+}
+#menuBox { 
+    position:absolute; 
+    top:265px;
+    left:0px; 
+    border: 1px solid black; 
+    width:110px; 
+    border: 0; 
+    border-top: 5px black solid; 
+    padding:0;
+    padding-top: 6px;
+}
+#menuBox a, a:visited {
+    color: #222;
+    text-decoration:none;
+}
+#menuBox a:hover, a:focus {
+    color: #666;
+    text-decoration:none;
+}
+#menuBox ul { list-style-type:none; margin:0;padding:0; padding-left:5px; font-size:24px; width:70px;}
+#menuBox li { margin:0; }
+#menuBox li a { display:block; padding: 1px 0;}
+#imgSmallContainer { position: absolute; top:120px; left:5px; padding:0; width:101px;height:145px;}
+#imgSmallContainer img { width:100px; height:145px; }
+#blurb { 
+    position: absolute;
+    left: 120px;
+    top: 80px;
+    width: 320px;
+}
+#blurb p { 
+    font-size:22px;
+    color: #a2a2a2;
+    text-align:center;
+}
+#blurb p #name {
+    color:#222;
+    font-weight:bold;
+}
+#blurb p a, a:visited {
+    color: #a2a2a2;
+    text-decoration:none;
+}
+#blurb p a:hover,a:focus {
+    text-decoration:underline;    
+}
+#footer {
+    height:50px;
+    border:0;
+    position:absolute; 
+    left:250px; 
+    bottom:15px; 
+    width:230px; 
+    padding:0;
+}
+#footer #socialText { 
+    height:30px;
+    border: 0;;
+    float:left; 
+    width:108px; 
+    font-size:14px; 
+    margin-top:12px;
+}
+#footer #socialText p{
+    border:0;
+    text-align: right;
+    margin-right: 10px;
+}
+#footer #socialIcons {
+    text-align:center;
+    margin-left:110px;
+    width:101px;
+    padding:0;
+    height:30px; 
+    border:0;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #222;
+}
+#footer #socialIcons img { opacity:0.4;filter:alpha(opacity=40);width:30px; height:30px; border:0; margin:0;}
+#footer #socialIcons img:hover {
+    opacity:1;filter:alpha(opacity=100);
+}
+#largeMe { 
+    position: absolute;
+    left:460px;
+    top:12px;
+}
+#largeMe img { width:137px; height:415px; }
+-->
+</style>
+<script type="text/javascript">
+function changeInnerHtml(id,innerhtml)
+{
+    var elem = document.getElementById(id);
+    elem.innerHTML = innerhtml;
+}
+function changeImage(filename)
+{
+    var elem = document.getElementById("smallImage");
+    elem.src = "hub_images/" + filename;
+}
+var defText = "I ALSO USE";
+var defImage = "small_standing.png";
+</script>
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21871316-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="oneColFixCtr">
+<div id="preload" style="display:none;">
+<img src="hub_images/small_handstand.png" alt="hidden" /><img src="hub_images/small_jump.png" alt="hidden" /><img src="hub_images/small_jumpkick.png" alt="hidden" /><img src="hub_images/small_standing.png" alt="hidden" />
+</div>
+<div id="container">
+  <div id="header"><img src="hub_images/leehsueh_banner.png" alt="leehsueh" /></div>
+  <div id="menuBox">
+    <ul>
+      <li><a href="http://blog.leehsueh.com" title="powered by WordPress" onmouseover="changeImage('small_handstand.png'); return true;" onmouseout="changeImage(defImage); return true;">BLOG</a></li>
+      <li><a href="http://site.leehsueh.com" title="powered by home-brewed PHP" onmouseover="changeImage('small_jumpkick.png'); return true;" onmouseout="changeImage(defImage); return true;">SITE</a></li>
+      <li><a href="http://site.leehsueh.com/docs/resume.pdf" title="PDF resume" onmouseover="changeImage('small_jump.png'); return true;" onmouseout="changeImage(defImage); return true;">RESUME</a></li>
+    </ul>
+  </div>
+  <div id="imgSmallContainer"><img id="smallImage" src="hub_images/small_standing.png" alt="I'm cool." /></div>
+  <div id="blurb"><p><a href="http://www.tjc.org">True Jesus Church Christian</a>. Cornell ECE graduate. Oracle Applications Engineer. Tennis fanatic. Classical cellist. Casual pianist. Photo enthusiast. Lame artist. <span id="name">Hain-Lee Hsueh.</span> </p></div>
+  <div id="footer">
+    <div id="socialText"><p id="socialTextP">I ALSO USE</p></div>
+    <div id="socialIcons"><p><a href="http://www.linkedin.com/in/leehsueh"><img src="hub_images/linkedin_icon_small.png" alt="LinkedIn" onmouseover="changeInnerHtml('socialTextP','LINKEDIN'); return true;" onmouseout="changeInnerHtml('socialTextP',defText); return true;" /></a> <a href="http://facebook.com/leehsueh"><img src="hub_images/facebook icon_small.png" alt="Facebook" onmouseover="changeInnerHtml('socialTextP','FACEBOOK'); return true;" onmouseout="changeInnerHtml('socialTextP',defText); return true;" /></a> <a href="http://leehsueh.shutterfly.com"><img src="hub_images/shutterfly_icon_small.png" alt="my shutterfly site" onmouseover="changeInnerHtml('socialTextP','SHUTTERFLY'); return true;" onmouseout="changeInnerHtml('socialTextP',defText); return true;" /></a></p></div>
+  </div>
+  <div id="largeMe"><img src="hub_images/standing_large.png" alt="I'm cool." /></div>
+<!-- end #container --></div>
+</body>
+</html>
