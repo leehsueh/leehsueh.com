@@ -424,6 +424,7 @@ ul#cards li {
   width:200px;
   margin-right:20px;
   margin-top:20px;
+  border-radius:10px;
   background: rgb(53,106,160); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,106,160,1)), color-stop(100%,rgba(53,106,160,1))); /* Chrome,Safari4+ */
@@ -438,8 +439,11 @@ ul#cards li a {
   padding:50px 20px;
 }
 ul#cards li a:link, ul#cards li a:visited, ul#cards li a:active {
-  color:white;
+  color:rgba(53,106,160,1);
   text-decoration:none;
+}
+ul#cards li a:hover {
+  color:white;
 }
 
 /* =============================================================================
