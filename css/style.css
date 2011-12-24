@@ -422,6 +422,7 @@ nav#side-nav #topLink {
 }
 ul#cards {
   padding:0;
+  display:none;
 }
 ul#cards li {
   display:inline-block;

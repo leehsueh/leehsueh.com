@@ -42,4 +42,7 @@ $(document).ready(function() {
 		min: 100,
 		fadeSpeed: 800
 	});
+    
+    $('#cards').hide();
+    $('#cards').delay(800).slideDown(300);
 })
