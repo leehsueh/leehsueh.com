@@ -30,8 +30,8 @@ $(document).ready(function() {
         var destination = $(elementClicked).offset().top;
         $("html:not(:animated),body:not(:animated)").animate(
 	        {scrollTop: destination-50}, 
-	        500, 
-	        'swing',
+	        800, 
+	        'easeOutQuart',
 	        function() {}
 	    );
         return false;

@@ -357,10 +357,14 @@ body {
   font-size:350%;
   margin:0;
 }
+#section-0 h1 {
+  font-family: 'Nunito', sans-serif;
+}
 #section-0 h2 {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
   font-weight:normal;
   font-size:200%;
-  font-family:Times;
   letter-spacing:15px;
   margin-top:-20px;
 }
@@ -425,6 +429,7 @@ ul#cards li {
   margin-right:20px;
   margin-top:20px;
   border-radius:10px;
+  /* blue */
   background: rgb(53,106,160); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,106,160,1)), color-stop(100%,rgba(53,106,160,1))); /* Chrome,Safari4+ */
@@ -432,6 +437,15 @@ background: -webkit-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1
 background: -o-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* IE10+ */
 background: linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C */
+
+    /* green */
+background: rgb(115,136,10); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(115,136,10,1) 0%, rgba(115,136,10,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(115,136,10,1)), color-stop(100%,rgba(115,136,10,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* IE10+ */
+background: linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* W3C */
 }
 ul#cards li a {
   display:block;
@@ -439,7 +453,7 @@ ul#cards li a {
   padding:50px 20px;
 }
 ul#cards li a:link, ul#cards li a:visited, ul#cards li a:active {
-  color:rgba(53,106,160,1);
+  color:rgb(115,136,10);
   text-decoration:none;
 }
 ul#cards li a:hover {
