@@ -34,13 +34,15 @@ $(document).ready(function() {
 	        'easeOutQuart',
 	        function() {}
 	    );
+        $("#side-nav li a").each(function() {$(this).removeClass('selected');});
+        $(this).addClass('selected');
         return false;
     });
 
 	//set the link
 	$('#topLink').topLink({
-		min: 100,
-		fadeSpeed: 800
+		min: 200,
+		fadeSpeed: 500
 	});
     
     $('#cards').hide();
