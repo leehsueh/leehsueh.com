@@ -317,30 +317,34 @@ table { border-collapse: collapse; border-spacing: 0; }
 }
 
 body {
-  background: url('../images/webtreats_wood-pattern1-beige.jpg') fixed;
+  background-color: rgba(0,0,0,0.2);
+  background:url('../images/eggshell.jpg') fixed;
   margin:0 auto;
-  margin-left:250px;
-  width: 960px;
-
+  /*margin-left:250px;*/
+  max-width: 100%;
+  min-width:50em;
 }
 
 #container {
   border: 0;
   border-left: 1px solid #8c7867;
-  box-shadow:-1px 0px 5px 1px #8c7867;
+  box-shadow:inset -1px 0px 5px 1px #8c7867;
   background: url('../images/webtreats_wood-pattern1-beige.jpg');
   padding:25px;
 }
 
 .section {
-  height:779px;
+  min-height:779px;
   background-color: rgba(0,0,0,0.2);
   background:url('../images/eggshell.jpg');
   padding:20px;
   margin-bottom:20px;
 }
+.section article header h1 {
+  font-size:200%;
+}
 
-#main p {
+#main {
   font:18px/26px Helvetica, Helvetica Neue, Arial;
 }
 
@@ -377,15 +381,16 @@ nav#side-nav {
   left:50px;
   top:100px;
   position:fixed;
-
+  display:none;
 }
 nav#side-nav ul li {
-  background: url('../images/webtreats_wood-pattern1-beige.jpg');
-  box-shadow:inset 0px 0px 2px 2px #8c7867;
+  /*background: url('../images/webtreats_wood-pattern1-beige.jpg');*/
+
+  /*box-shadow:0px 0px 2px 2px #8c7867;
+  border-radius:5px;*/
   text-align:center;
-  border-radius:5px;
-  /*display: inline-block;*/
-  margin:40px 0;
+  display: block;
+  margin:20px 0;
 
   /* transitions */
   transition:all 0.3s ease-in-out;
@@ -394,17 +399,12 @@ nav#side-nav ul li {
   -o-transition:all 0.3s ease-in-out; /* Opera */
 }
 nav#side-nav ul li:hover {
-/*  transform:scale(1.2);
-  -moz-transform:scale(1.2);
-  -webkit-transform:scale(1.2);
-  -o-transform:scale(1.2);*/
-  box-shadow: 0 0px 5px 2px #51453a;
   cursor:pointer;
 }
 
 nav#side-nav ul li a, nav#side-nav ul li a:link, nav#side-nav ul li a:visited {
   display:block;
-  padding:30px;
+  padding:0px;
   margin: 0 auto;
 
   text-align:center;
@@ -418,6 +418,8 @@ nav#side-nav ul li a, nav#side-nav ul li a:link, nav#side-nav ul li a:visited {
 nav#side-nav #topLink {
   display:none;
   background: url('../images/ui.totop.png') no-repeat center;
+  padding:30px;
+  /*background:rgba(0,0,0,0.3);*/
   box-shadow:none;
 }
 ul#cards {
@@ -432,21 +434,21 @@ ul#cards li {
   border-radius:10px;
   /* blue */
   background: rgb(53,106,160); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,106,160,1)), color-stop(100%,rgba(53,106,160,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* IE10+ */
-background: linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C */
+  background: -moz-linear-gradient(top, rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,106,160,1)), color-stop(100%,rgba(53,106,160,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* IE10+ */
+  background: linear-gradient(top, rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C */
 
     /* green */
-background: rgb(115,136,10); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(115,136,10,1) 0%, rgba(115,136,10,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(115,136,10,1)), color-stop(100%,rgba(115,136,10,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* IE10+ */
-background: linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* W3C */
+  background: rgb(115,136,10); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(115,136,10,1) 0%, rgba(115,136,10,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(115,136,10,1)), color-stop(100%,rgba(115,136,10,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* IE10+ */
+  background: linear-gradient(top, rgba(115,136,10,1) 0%,rgba(115,136,10,1) 100%); /* W3C */
 }
 ul#cards li a {
   display:block;
@@ -459,6 +461,10 @@ ul#cards li a:link, ul#cards li a:visited, ul#cards li a:active {
 }
 ul#cards li a:hover {
   color:white;
+}
+
+#section-1 ul li {
+  
 }
 
 /* =============================================================================

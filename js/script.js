@@ -45,4 +45,10 @@ $(document).ready(function() {
     
     $('#cards').hide();
     $('#cards').delay(800).slideDown(300);
+
+    $('#side-nav').hide();
+    $('body').delay(800).animate({
+      marginLeft:'250px'
+    }, 1000, 'easeOutQuart',function() {$('#side-nav').fadeIn(200);});
+    
 })
