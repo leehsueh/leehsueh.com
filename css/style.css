@@ -215,106 +215,6 @@ table { border-collapse: collapse; border-spacing: 0; }
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
- 
-/* This is the top right shadow*/
-.cardshadow:before{
-    content: '';
-    width: 50px;
-    height: 50px;
-    top:0; right:0;
-    position:absolute;
-    z-index: -1;
-    -webkit-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
-    box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
-    -webkit-transform: rotate(2deg)
-                        translate(-14px,20px)
-                        skew(-20deg);
-    -moz-transform: rotate(2deg)
-                        translate(-14px,20px)
-                        skew(-20deg);
-        -o-transform: rotate(2deg)
-                        translate(-14px,20px)
-                        skew(-20deg);
-                transform: rotate(2deg)
-                        translate(-14px,20px)
-                        skew(-20deg);
-}
- 
-/* This is the top left shadow*/
-.cardshadow:after{
-    content: '';
-    width: 50px;
-    height: 50px;
-    top:0; left:0;
-    position:absolute;
-    z-index:-1;
-    display: inline-block;
-    -webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
-    -webkit-transform: rotate(2deg)
-                        translate(12px,25px)
-                        skew(20deg);
-    -moz-transform: rotate(2deg)
-                        translate(12px,25px)
-                        skew(20deg);
-    -o-transform: rotate(2deg)
-                        translate(12px,25px)
-                        skew(20deg);
-    transform: rotate(2deg)
-                        translate(12px,25px)
-                        skew(20deg);
-}
- 
-/* This is the bottom right shadow */
-.shr_cardshadow{
-    width: 100px;
-    height: 100px;
-    bottom:0; right:0;
-    position:absolute;
-    z-index: -1;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    -webkit-transform: rotate(0deg)
-                        translate(-20px,-15px)
-                       skew(20deg);
-    -moz-transform: rotate(0deg)
-                        translate(-20px,-15px)
-                       skew(20deg);
-    -o-transform: rotate(0deg)
-                        translate(-20px,-15px)
-                       skew(20deg);
-        transform: rotate(0deg)
-                        translate(-20px,-15px)
-                       skew(20deg);
-}
- 
-/* This is the bottom left shadow */
-.shl_cardshadow{
-    content: '';
-    width: 100px;
-    height: 100px;
-    bottom:0; left:0;
-    position:absolute;
-    z-index: -1;
-    -webkit-box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
-    -webkit-transform: rotate(0deg)
-                        translate(20px,-15px)
-                       skew(-20deg);
-    -moz-transform: rotate(0deg)
-                        translate(20px,-15px)
-                       skew(-20deg);
-    -o-transform: rotate(0deg)
-                        translate(20px,-15px)
-                       skew(-20deg);
-    transform: rotate(0deg)
-                        translate(20px,-15px)
-                       skew(-20deg);
-}
 
 body {
   background-color: rgba(0,0,0,0.2);
@@ -469,7 +369,7 @@ ul#cards li a {
   padding:50px 20px;
 }
 ul#cards li a:link, ul#cards li a:visited, ul#cards li a:active {
-  color:rgb(115,136,10);
+  /*color:rgb(115,136,10);*/
   text-decoration:none;
 }
 ul#cards li a:hover {
