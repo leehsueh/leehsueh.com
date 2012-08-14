@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Hain-Lee Hsueh - LDT Portfolio</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="twelve columns">
+      <h2>leehsueh</h2>
+      <div id="featured">
+        <img src="http://placehold.it/1200x250&text=Slide_1" alt="slide image">
+        <img src="http://placehold.it/1200x250&text=Slide_2" alt="slide image">
+        <img src="http://placehold.it/1200x250&text=Slide_3" alt="slide image">
+      </div>
+      <p>Stuff I did in the Learning, Design, and Technology program at Stanford.</p>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="three columns">
+      <dl class="vertical tabs">
+        <dd class="active"><a href="#courses-container">Courses</a></dd>
+        <dd><a href="#projects-container">Projects</a></dd>
+      </dl>
+    </div>
+
+    <div class="nine columns">
+      <ul class="tabs-content">
+        <li class="active" id="courses-containerTab">
+          <h3>Courses</h3>
+          <dl class="tabs pill">
+            <dd class="active"><a href="#fall">Fall 2011</a></dd>
+            <dd><a href="#winter">Winter 2012</a></dd>
+            <dd><a href="#spring">Spring 2012</a></dd>
+            <dd><a href="#summer">Summer 2012</a></dd>
+          </dl>
+          <ul class="tabs-content" id="courses-list"></ul>
+        </li>
+        <li id="projects-containerTab">
+          <h3>Projects</h3>
+          <ul id="projects-list"></ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <footer class="twelve rows">
+      <p>Copyright &copy; 2012 Hain-Lee Hsueh</p>
+    </footer>
+  </div>
+
+
+  <script id="quarter-courses-template" type="text/x-handlebars-template">
+  <li class="quarter-li" id="{{id}}Tab">
+    <h4>{{quarter}}</h4>
+    <ul>
+      {{#each courses}}
+      <li class="course-li">
+        <h5>{{courseNum}}: {{courseName}} ({{units}} units)</h5>
+        <p>{{{courseDesc}}}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </li>
+  </script>
+  
+  <script id="project-list-template" type="text/x-handlebars-template">
+  <li class="project-li">
+    <h4><a data-reveal-id="{{id}}">{{name}}</a></h4>
+    <p>{{{desc}}}</p>
+    <!--<a href="#" data-reveal-id="{{id}}" class="button">More</a>-->
+  </li>
+  </script>
+
+  <script id="project-template" type="text/x-handlebars-template">
+  <div id="{{id}}" class="reveal-modal project-modal">
+    <h2>{{name}}</h2>
+    {{#if images}}
+    <div class="images-container">
+      <ul>
+      {{#each images}}
+        <li><img src="images/projects/{{this}}" /></li>
+      {{/each}}
+      </ul>
+    </div>
+    {{/if}}
+    <p>
+      {{{desc}}}
+    </p>
+    {{#if link}}
+    <p><a href="{{link}}">Project Link</a></p>
+    {{/if}}
+    {{#if files}}
+    <h3>Files</h3>
+    <div class="files-container">
+      <ul>
+        {{#each files}}
+        <li><a href="files/{{src}}">{{title}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/if}}
+    <a class="close-reveal-modal">×</a>
+  </div>
+  </script>
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  
+  <script src="javascripts/modernizr.foundation.js"></script>
+  
+  <script src="javascripts/jquery.js"></script>
+  
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  
+  <script src="javascripts/jquery.placeholder.js"></script>
+  
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/underscore-min.js"></script>
+  <script src="javascripts/handlebars-1.0.0.beta.6.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/data.js"></script>
+  <script src="javascripts/app.js"></script>
+</body>
+</html>
