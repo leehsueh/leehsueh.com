@@ -166,7 +166,12 @@ var projects = [
 		name: "Qualitative Mini-Research Project",
 		desc: "Worked with <a href=\"http://otterdotter.tumblr.com/\">Anna Ly</a> and <a href=\"http://katiemcfeely.com\">Katie McFeely</a> in interviewing a special-ed teacher and observing classes at a school for students with emotional disturbances and similar developmental disabilities. Transcribed interviews and field notes from each member were digitized, coded, analyzed, and synthesized in a mini-research paper.",
 		images: [],
-		files: [],
+		files: [
+			{
+				title: "Deficit Perspectives in a Classroom for Emotional Disabilities",
+				src: "educ200b_mini-product.pdf"
+			}
+		],
 	},
 	{
 		id: "prj-cs377i",
