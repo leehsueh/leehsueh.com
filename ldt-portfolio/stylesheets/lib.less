@@ -1,0 +1,119 @@
+/*
+ * some snippets from https://github.com/imeos/LESS-CSS-Snippets
+ */
+
+
+/* Mixins */
+.background-size(@size) {
+    -webkit-background-size:@size;
+    -moz-background-size:@size;
+    -o-background-size:@size;
+    -ms-background-size:@size;
+    background-size:@size;
+}
+
+.border-radius(@radii) {
+    -webkit-border-radius:@radii;
+    -moz-border-radius:@radii;
+    border-radius:@radii;
+}
+
+// Box shadows
+.box-shadow(@value) {
+    @val:@value;
+	-webkit-box-shadow:@val;
+	-moz-box-shadow:@val;
+	box-shadow:@val;
+}
+
+.box-shadow-double(@value1, @value2) {
+    @val:@value1, @value2;
+	-webkit-box-shadow:@val;
+	-moz-box-shadow:@val;
+	box-shadow:@val;
+}
+
+.box-shadow-triple(@value1, @value2, @value3) {
+    @val:@value1, @value2, @value3;
+	-webkit-box-shadow:@val;
+	-moz-box-shadow:@val;
+	box-shadow:@val;
+}
+
+ // Gradients
+.gradient-x(@start:#000, @stop:#111) {
+    background-color:@stop;
+    background-repeat:repeat-x;
+    background-image:-webkit-gradient(linear, left top, right top, from(@start), to(@stop));
+    background-image:-webkit-linear-gradient(left, @start, @stop);
+    background-image:-moz-linear-gradient(left, @start 0%, @stop 100%);
+    background-image:-o-linear-gradient(left, @start 0%, @stop 100%);
+    background-image:-ms-linear-gradient(left, @start 0%, @stop 100%);
+    background-image:linear-gradient(left, @start 0%, @stop 100%);
+} 
+
+.gradient-y(@start:#000, @stop:#111) {
+    background-color:@stop;
+    background-repeat:repeat-x;
+    background-image:-webkit-gradient(linear, left top, left bottom, from(@start), to(@stop));
+    background-image:-webkit-linear-gradient(top, @start, @stop);
+    background-image:-moz-linear-gradient(top, @start 0%, @stop 100%);
+    background-image:-o-linear-gradient(top, @start 0%, @stop 100%);
+    background-image:-ms-linear-gradient(top, @start 0%, @stop 100%);
+    background-image:linear-gradient(top, @start 0%, @stop 100%);
+} 
+
+.gradient-deg(@start: #555, @stop: #333, @deg: 45deg) {
+    background-color: @stop;
+    background-repeat:repeat-x;
+    background-image: -webkit-linear-gradient(@deg, @start, @stop);
+    background-image: -moz-linear-gradient(@deg, @start, @stop);
+    background-image: -o-linear-gradient(@deg, @start, @stop);
+    background-image: -ms-linear-gradient(@deg, @start, @stop);
+    background-image: linear-gradient(@deg, @start, @stop);
+}
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Opacity
+.opacity(@opacity: 100) {
+    -webkit-opacity: @opacity / 100;
+    -moz-opacity: @opacity / 100;
+    -o-opacity: @opacity / 100;
+    filter: e(%("alpha(opacity=%d)", @opacity));
+    opacity: @opacity / 100;
+}
+
+// Transformations like 'scale(2)', 'rotate(30deg)', ...
+.transform(@value) {
+    @val:@value;
+    -webkit-transform:@val;
+    -moz-transform:@val;
+    -o-transform:@val;
+    -ms-transform:@val;
+    transform:@val;
+}
+
+// Transitions like '0.3s linear opacity', ...
+.transition(@value) {
+    @val:@value;
+    -webkit-transition:@val;
+    -moz-transition:@val;
+    -o-transition:@val;
+    transition:@val;
+}
+
+// Input placeholder text
+.placeholder(@color: #999) {
+    :-moz-placeholder {color: @color;}
+    ::-webkit-input-placeholder {color: @color;}
+}

@@ -1,7 +1,22 @@
+@import "lib";
 
 a:hover {
 	cursor: pointer;
-	text-decoration: underline;
+}
+
+#profile-img-container {
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+	.border-radius(10px);
+	background: url('../images/profile.JPG');
+	background-size: 100%;
+	background-position: 0 -50px;
+	img {
+		width: 100%;
+		position: absolute;
+		top: -30px;
+	}
 }
 #projects-containerTab, #courses-containerTab {
 	ul li {
@@ -16,7 +31,7 @@ a:hover {
 			margin: 10px 0;
 			margin-bottom: 30px;
 			h4, p, blockquote {
-				width: 85%;
+				// width: 85%;
 			}
 /*			a.button {
 				position: absolute;
@@ -29,6 +44,9 @@ a:hover {
 }
 
 .project-modal {
+	a:hover {
+		text-decoration: underline;
+	}
 	.images-container {
 		ul li {
 			display: inline-block;
