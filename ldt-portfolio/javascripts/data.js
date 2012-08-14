@@ -204,7 +204,7 @@ var projects = [
 	{
 		id: "prj-educ328x",
 		name: "EDUC 328X Final: Conceptual Understanding of the Internet",
-		desc: "",
+		desc: "A 15 minute lesson I developed which incorporated the following core mechanics: analogy, elaboration, and just-in-time telling. More details on the interplay of these mechanics in the report.",
 		images: ["educ328x_final.png"],
 		files: [
 			{
@@ -220,7 +220,7 @@ var projects = [
 	{
 		id: "prj-educ328x-concepts",
 		name: "EDUC 328X Learning Activity/Game Concepts",
-		desc: "",
+		desc: "Various assignments/ideas I did for Dan Schwartz's class to demonstrate different core mechanics. For contrasting cases I designed instruction for a tennis noob to develop more precise knowledge about tennis racquets. For elaboration I worked with <a href=\"http://michaelduong.com\">Mike Duong</a> and came up with a game for practicing the creation of memorable and secure passwords. For the teachable agent assignment, I came up with a game for becoming familiar with the exposure triangle in photography.",
 		images: [],
 		files: [
 			{

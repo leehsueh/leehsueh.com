@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="stylesheets/foundation.css">
   -->
   
+  <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
   <link rel="stylesheet" href="stylesheets/app.css">
@@ -121,7 +123,7 @@
     <div class="images-container">
       <ul>
       {{#each images}}
-        <li><img src="images/projects/{{this}}" /></li>
+        <li><a href="images/projects/{{this}}" rel="lightbox[{{../id}}]"><img src="images/projects/{{this}}" /></a></li>
       {{/each}}
       </ul>
     </div>
@@ -181,6 +183,7 @@
   <script src="javascripts/foundation.min.js"></script>
   <script src="javascripts/underscore-min.js"></script>
   <script src="javascripts/handlebars-1.0.0.beta.6.js"></script>
+  <script src="lightbox/js/lightbox.js"></script>
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/data.js"></script>
